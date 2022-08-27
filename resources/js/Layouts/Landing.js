@@ -1,20 +1,13 @@
 import React from 'react';
 import MenuBar from "../Components/MenuBar";
-import {Container} from "@nextui-org/react";
 
-export default function LandingLayout({ children }) {
+export default function LandingLayout({children}) {
     return (
         <main>
             <header>
-                <Container  fluid="true">
-                    <MenuBar />
-                </Container>
+                <MenuBar/>
             </header>
-            <article>
-                <Container  fluid="true">
-                    {children}
-                </Container>
-            </article>
+            <article>{children}</article>
         </main>
     )
 }
