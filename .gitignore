@@ -25,4 +25,3 @@ Homestead.json
 /.idea
 
 yarn.lock
-docker-compose.yml
