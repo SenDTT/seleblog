@@ -18,7 +18,9 @@
         "@nextui-org/react": "^1.0.8-beta.5",
         "next": "^12.1.5",
         "react": "^17.0.2",
-        "react-dom": "^17.0.2"
+        "react-dom": "^17.0.2",
+        "react-icons": "^4.4.0",
+        "react-svg": "14.1.12"
     },
     "devDependencies": {
         "@babel/preset-react": "^7.16.7",
@@ -29,7 +31,7 @@
         "laravel-mix": "^6.0.43",
         "postcss": "^8.4.12",
         "postcss-import": "^14.1.0",
-        "tailwindcss": "^3.0.24"
+        "tailwindcss": "^3.1.8"
     },
     "description": "<p align=\"center\"><a href=\"https://laravel.com\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg\" width=\"400\"></a></p>",
     "main": "tailwind.config.js",

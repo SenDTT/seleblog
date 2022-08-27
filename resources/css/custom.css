@@ -1,0 +1,51 @@
+:root {
+    --main-blue: '#242B52';
+    --main-yellow: '#FFC200';
+}
+
+.sele-navbar {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+.sele-navbar > li {
+    display: inline-block;
+    margin-bottom: 0;
+}
+.sele-navbar > li:first-child > a {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.sele-navbar > li > a {
+    border-radius: 10px;
+    margin: 5px;
+    padding: 2px 10px;
+    display: block;
+}
+
+.sele-svg-logo {
+    width: 130px;
+    height: 50px;
+}
+
+.sele-navbar > li.sele-navbar-items > a:hover > .sele-navbar-text {
+    color: #FFC200;
+}
+
+.sele-navbar > li.sele-navbar-items > a:hover {
+    display: block;
+    background-color: #242B52;
+    opacity: 1;
+}
+
+.nextui-button.sele-primary-btn .nextui-button-text p {
+    color: #FFC200;
+    font-weight: bold;
+}
+
+.nextui-button.sele-primary-btn {
+    background-color: #242B52;
+}

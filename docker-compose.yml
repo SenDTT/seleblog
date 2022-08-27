@@ -2,6 +2,7 @@
 version: '3'
 services:
     laravel.test:
+        container_name: "seleblog"
         build:
             context: ./vendor/laravel/sail/runtimes/8.1
             dockerfile: Dockerfile
@@ -25,6 +26,7 @@ services:
             - mysql
             - redis
     mysql:
+        container_name: "seleblog-mysql"
         image: 'mysql/mysql-server:8.0'
         ports:
             - '${FORWARD_DB_PORT:-3306}:3306'
@@ -44,6 +46,7 @@ services:
             retries: 3
             timeout: 5s
     redis:
+        container_name: "seleblog-redis"
         image: 'redis:alpine'
         ports:
             - '${FORWARD_REDIS_PORT:-6379}:6379'
@@ -56,6 +59,7 @@ services:
             retries: 3
             timeout: 5s
     memcached:
+        container_name: "seleblog-memcached"
         image: 'memcached:alpine'
         ports:
             - '11211:11211'

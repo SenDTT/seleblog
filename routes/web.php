@@ -15,8 +15,8 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Welcome');
+Route::group(['prefix' => '/'], function () {
+    \Composer\Autoload\includeFile(__DIR__ . '/landing/home.php');
 });
 
 Route::middleware([
